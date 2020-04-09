@@ -1,0 +1,115 @@
+body {
+    background-image: linear-gradient(to bottom, rgb(230, 224, 216), #FFFFFF 40%);
+}
+
+h1 {
+    text-shadow: 2px 2px rgb(182, 182, 182);
+}
+
+.title {
+    font-family: 'Girassol', cursive;
+    font-size: 50px;
+    text-shadow: 2px 2px rgb(182, 182, 182);
+}
+
+.nav {
+    box-shadow: 0 3px rgb(182, 182, 182);
+    background-image: linear-gradient(to right, rgb(88, 88, 247), white, rgb(88, 88, 247))
+}
+
+.name {
+    font-weight: 800;
+}
+
+#resumeBtn {
+    color: black;
+    padding: 10px;
+    border: 1px solid blue;
+    background-color: white;
+    border-radius: 15px;
+}
+
+#resumeBtn:hover {
+    background-color: rgb(221, 226, 241);
+    transform: translateY(-3px);
+    transition-duration: all 1s;
+    animation: shadow 1s 1;
+    animation-fill-mode: forwards;
+}
+
+#resumeBtn:active {
+    transform: translateY(3px);
+    animation: click 5s 1;
+}
+
+.icon {
+    margin-left: 20px;
+    font-size: 60px !important;
+}
+
+.github {
+    margin: 0;
+}
+
+.card {
+    display: inline-block;
+    height: 403.28px;
+    box-shadow: 0 7px rgb(182, 182, 182, 0.7) !important;
+}
+
+.cardMedia {
+    width: 373px;
+    height: 222.48px;
+}
+
+.cardTitle {
+    color: black;
+    font-weight: 500 !important;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: gray;
+    text-decoration: none;
+}
+
+.myInfo {
+    margin-left: 120px;
+}
+
+.profileImg {
+    margin-top: 15px;
+    border-radius: 75px;
+}
+
+  @media only screen and (max-width: 991px) {
+    .myInfo {
+        margin-left: 0;
+    }
+    .profileImg {
+        margin: 15px auto;
+    }
+  }
+
+  @media only screen and (max-width: 766px) {
+    .profileImg {
+        min-width: 420px;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .profileImg {
+        width: 420px;
+    }
+  }
+
+  @keyframes shadow {
+    100% {box-shadow: 0 7px rgb(182, 182, 182);}
+  }
+
+  @keyframes click {
+    100% {box-shadow: 0 3px rgb(182, 182, 182);}
+  }

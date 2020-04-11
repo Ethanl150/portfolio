@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(to bottom, rgb(230, 224, 216), #FFFFFF 40%);
+    background-image: linear-gradient(to bottom, rgb(230, 224, 216), rgb(245, 244, 244) 40%);
 }
 
 h1 {
@@ -54,7 +54,7 @@ h1 {
 .card {
     display: inline-block;
     height: 403.28px;
-    box-shadow: 0 7px rgb(182, 182, 182, 0.7) !important;
+    box-shadow: 3px 6px rgba(185, 184, 184, 0.2) !important;
 }
 
 .cardMedia {
@@ -83,6 +83,10 @@ a:hover {
 .profileImg {
     margin-top: 15px;
     border-radius: 75px;
+}
+
+.footer {
+    background-color: rgb(245, 244, 244) !important;
 }
 
   @media only screen and (max-width: 991px) {

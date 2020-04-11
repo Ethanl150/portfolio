@@ -4,6 +4,7 @@ import passwordGenerator from "./images/passwordgenerator.png";
 import eatDaBurger from "./images/eatdaburger.png";
 import noteTaker from "./images/notetaker.png";
 import weatherDashboard from "./images/weatherdashboard.png";
+import googleBooksSearch from "./images/googlebookssearch.png"
 import foodFinder from "./images/foodfinder.png";
 import fyre from "./images/fyre.png";
 import Header from "./components/Header.js";
@@ -52,6 +53,13 @@ const App = () => {
             image={weatherDashboard}
             description="An application that displays the weather of a specified city."
             gitHubLink="https://github.com/Ethanl150/weatherdashboard"
+          />
+          <Project
+            appLink="https://intense-anchorage-26607.herokuapp.com/"
+            name="Google Books Search"
+            image={googleBooksSearch}
+            description="An application that allows the user to search for and save books."
+            gitHubLink="https://github.com/Ethanl150/googlebookssearch"
           />
         </Grid>
         <h1 className="text-center mt-5">Group projects</h1>

@@ -20,7 +20,7 @@ function Main() {
                     <a href={resume} target="_blank" rel="noopener noreferrer" className="mt-5 mx-auto"><button id="resumeBtn"><h4>View my resume</h4></button></a>
                     <div className="d-flex mt-5 mx-auto mb-3">
                         <a href="https://github.com/Ethanl150" target="_blank" rel="noopener noreferrer" title="GitHub"><GitHubIcon color="primary" className="github icon" /></a>
-                        <a href="https://www.linkedin.com/in/ethan-lacy-a4210819a/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><LinkedInIcon color="primary" className="icon" /></a>
+                        <a href="https://www.linkedin.com/in/ethanlacy/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><LinkedInIcon color="primary" className="icon" /></a>
                         <a href="mailto: ethanlay150@gmail.com" target="_blank" rel="noopener noreferrer" title="Email Me">
                             <EmailIcon color="primary" className="icon" />
                         </a>

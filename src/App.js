@@ -7,6 +7,7 @@ import weatherDashboard from "./images/weatherdashboard.png";
 import googleBooksSearch from "./images/googlebookssearch.png"
 import foodFinder from "./images/foodfinder.png";
 import fyre from "./images/fyre.png";
+import singularity from "./images/singularity.png"
 import Header from "./components/Header.js";
 import Main from "./components/Main.js";
 import Container from "./components/Container.js";
@@ -77,6 +78,13 @@ const App = () => {
             image={fyre}
             description="An application that allows the user to quickly discover new music."
             gitHubLink="https://github.com/Ethanl150/fyre"
+          />
+           <Project
+            appLink="https://singularitytcg.herokuapp.com/"
+            name="Singularity"
+            image={singularity}
+            description="An online competitive card game."
+            gitHubLink="https://github.com/Ethanl150/singularity"
           />
         </Grid>
       </Container>

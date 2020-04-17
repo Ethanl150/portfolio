@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.0cc76927.chunk.css",
-    "main.js": "/portfolio/static/js/main.997c37bd.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.997c37bd.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.113ec966.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.113ec966.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.b37861ed.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.b37861ed.js.map",
-    "static/js/2.ac88a214.chunk.js": "/portfolio/static/js/2.ac88a214.chunk.js",
-    "static/js/2.ac88a214.chunk.js.map": "/portfolio/static/js/2.ac88a214.chunk.js.map",
+    "static/js/2.fab72eb2.chunk.js": "/portfolio/static/js/2.fab72eb2.chunk.js",
+    "static/js/2.fab72eb2.chunk.js.map": "/portfolio/static/js/2.fab72eb2.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.b63b51c2efe2692b2e0bcdee606bff59.js": "/portfolio/precache-manifest.b63b51c2efe2692b2e0bcdee606bff59.js",
+    "precache-manifest.b7ac1f6da99884d2892cade773ad268a.js": "/portfolio/precache-manifest.b7ac1f6da99884d2892cade773ad268a.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.0cc76927.chunk.css.map": "/portfolio/static/css/main.0cc76927.chunk.css.map",
-    "static/js/2.ac88a214.chunk.js.LICENSE.txt": "/portfolio/static/js/2.ac88a214.chunk.js.LICENSE.txt",
+    "static/js/2.fab72eb2.chunk.js.LICENSE.txt": "/portfolio/static/js/2.fab72eb2.chunk.js.LICENSE.txt",
     "static/media/eatdaburger.png": "/portfolio/static/media/eatdaburger.ed937024.png",
     "static/media/foodfinder.png": "/portfolio/static/media/foodfinder.ea7fc013.png",
     "static/media/fyre.png": "/portfolio/static/media/fyre.1a89c218.png",
@@ -19,13 +19,14 @@
     "static/media/notetaker.png": "/portfolio/static/media/notetaker.97c4b350.png",
     "static/media/passwordgenerator.png": "/portfolio/static/media/passwordgenerator.0d55b663.png",
     "static/media/profile.png": "/portfolio/static/media/profile.4a685be1.png",
-    "static/media/resume.pdf": "/portfolio/static/media/resume.f54683da.pdf",
+    "static/media/resume.pdf": "/portfolio/static/media/resume.a831ad4a.pdf",
+    "static/media/singularity.png": "/portfolio/static/media/singularity.2407955e.png",
     "static/media/weatherdashboard.png": "/portfolio/static/media/weatherdashboard.4ec1c167.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b37861ed.js",
-    "static/js/2.ac88a214.chunk.js",
+    "static/js/2.fab72eb2.chunk.js",
     "static/css/main.0cc76927.chunk.css",
-    "static/js/main.997c37bd.chunk.js"
+    "static/js/main.113ec966.chunk.js"
   ]
 }

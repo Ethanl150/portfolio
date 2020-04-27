@@ -18,7 +18,10 @@ import "./app.css";
 const App = () => {
 
   const scrollToTop = () => {
-    window.scrollTo(0, 0)
+    console.log('clicked')
+    // window.scrollTo(0, 0)
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   }
 
   return (
@@ -26,12 +29,15 @@ const App = () => {
       <Header />
       <Main />
       <Container>
-        <Grid container spacing={5} justify="space-around">
+        <h3 className="my-5 p-5 text-center" id="about-me">I am a full stack web developer with a certificate for completing a 3-month Penn LPS Coding Boot Camp. I am a quick learner and enjoy improving and developing my skills in order to become stronger and more competent. I have experience developing websites alone as well as in teams. My primary technical skills include React, Node, Express, MongoDB, and MySQL.</h3>
+        <h1 className="text-center">Solo projects</h1>
+        <Grid container spacing={5} justify="space-around" className="mt-5" id="projects">
           <Project
             appLink="https://ethanl150.github.io/PasswordGenerator/"
             name="Password Generator"
             image={passwordGenerator}
             description="An application that generates a random password according to the criteria determined by the end user."
+            technologies="HTML, CSS, JavaScript"
             gitHubLink="https://github.com/Ethanl150/passwordgenerator"
           />
           <Project
@@ -39,6 +45,7 @@ const App = () => {
             name="Eat-Da-Burger"
             image={eatDaBurger}
             description='An application that allows the user to "create" and "eat" burgers.'
+            technologies="Node, jQuery, MySQL, Handlebars, Bootstrap"
             gitHubLink="https://github.com/Ethanl150/eat-da-burger"
           />
           <Project
@@ -46,6 +53,7 @@ const App = () => {
             name="Note Taker"
             image={noteTaker}
             description="An application that allows the user to create, view, edit, and delete notes."
+            technologies="Node, Express, jQuery, Handlebars"
             gitHubLink="https://github.com/Ethanl150/notetaker"
           />
           <Project
@@ -53,6 +61,7 @@ const App = () => {
             name="Weather Dashboard"
             image={weatherDashboard}
             description="An application that displays the weather of a specified city."
+            technologies="HTML, CSS, jQuery, OpenWeatherMap API"
             gitHubLink="https://github.com/Ethanl150/weatherdashboard"
           />
           <Project
@@ -60,16 +69,18 @@ const App = () => {
             name="Google Books Search"
             image={googleBooksSearch}
             description="An application that allows the user to search for and save books."
+            technologies="Node, Express, React, Mongoose, Bootstrap, Google Books API"
             gitHubLink="https://github.com/Ethanl150/googlebookssearch"
           />
         </Grid>
         <h1 className="text-center mt-5">Group projects</h1>
-        <Grid container spacing={3} justify="space-around" className="mt-5">
+        <Grid container spacing={3} justify="space-around" className="mt-5" id="group-projects">
           <Project
             appLink="https://ethanl150.github.io/FoodFinder/"
             name="Food Finder"
             image={foodFinder}
-            description="An application that allows the user to search for places at which to eat in Philadelphia."
+            description="An application that allows the user to search for places at which they can eat in Philadelphia."
+            technologies="jQuery, Foundation, Google Maps API, Zomato API"
             gitHubLink="https://github.com/Ethanl150/foodfinder"
           />
           <Project
@@ -77,13 +88,15 @@ const App = () => {
             name="Fyre"
             image={fyre}
             description="An application that allows the user to quickly discover new music."
+            technologies="Node, Sequelize, Handlebars, Spotify API, Bootstrap"
             gitHubLink="https://github.com/Ethanl150/fyre"
           />
-           <Project
+          <Project
             appLink="https://singularitytcg.herokuapp.com/"
             name="Singularity"
             image={singularity}
-            description="An online competitive card game."
+            description="An online competitive card game. (In development)"
+            technologies="Node, React, Mongoose, Passport, Materialize"
             gitHubLink="https://github.com/Ethanl150/singularity"
           />
         </Grid>

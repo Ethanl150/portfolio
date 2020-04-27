@@ -7,12 +7,12 @@ import pfp from "../images/profile.png";
 
 function Main() {
     return (
-        <div className="container header">
-            <div className="row">
-                <img className="col-lg-4 col-sm-7 profileImg" height="525px" width="340px" src={pfp} alt="Ethan Lacy" />
-
+        //525 340
+        <div className="container-fluid main">
+            <img className="col-lg-4 col-sm-7 profileImg" height="350px" width="200px" src={pfp} alt="Ethan Lacy" />
+           
                 <div className="myInfo col-lg-6 d-flex flex-column justify-content-center">
-                    <div className="mt-3 mx-auto text-center">
+                    <div className="mx-auto text-center">
                         <h2>Hello, my name is</h2>
                         <h1 className="name">Ethan Lacy</h1>
                         <h5 className="mt-3"><i>Full-Stack Web Developer</i></h5>
@@ -27,7 +27,6 @@ function Main() {
                     </div>
                 </div>
             </div>
-        </div>
     )
 }
 

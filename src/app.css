@@ -1,6 +1,39 @@
-body {
-    background-image: linear-gradient(to bottom, rgb(230, 224, 216), rgb(245, 244, 244) 40%);
+html, body {
+    /* background-image: linear-gradient(to bottom, rgb(230, 224, 216), rgb(245, 244, 244) 40%); */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 }
+
+*:focus {
+    outline: none !important;
+}
+
+body {
+    background-image: linear-gradient(to bottom, rgb(235, 236, 245) 80%, rgba(63, 36, 170, 0.2));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+/* width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+ */
+
+#about-me {
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Germania One', cursive;
+    background-color: rgba(63, 36, 170, 0.4);
+    box-shadow: 0 0px 15px #95adb9;
+    text-shadow: 1px 1px rgb(182, 182, 182, 0.2);
+}
+
+
 
 h1 {
     text-shadow: 2px 2px rgb(182, 182, 182);
@@ -10,11 +43,59 @@ h1 {
     font-family: 'Girassol', cursive;
     font-size: 50px;
     text-shadow: 2px 2px rgb(182, 182, 182);
+    padding: 0;
+    float: left;
 }
 
 .nav {
-    box-shadow: 0 3px rgb(182, 182, 182);
-    background-image: linear-gradient(to right, rgb(88, 88, 247), white, rgb(88, 88, 247))
+    box-shadow: 0 5px 20px #95adb9;
+    background-color: rgba(112, 216, 241, 0.9);
+    padding: 0 1rem !important;
+    /* background-image: linear-gradient(to right, rgb(88, 88, 247), white, rgb(88, 88, 247)) */
+    z-index: 1;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    float: left;
+    list-style: none;
+    text-transform: uppercase;
+    padding: 0.86rem;
+    margin-top: 15px;
+}
+
+li h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+li a {
+    display: inline-block;
+    width: fit-content;
+    position: relative;
+}
+
+li a:hover {
+    color: rgb(8, 8, 129);
+}
+
+li a::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: #181717;
+    width: 0;
+    height: 3px;
+    top: -20px;
+    transition: width ease 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
 }
 
 .name {
@@ -25,15 +106,17 @@ h1 {
     color: black;
     padding: 10px;
     border: 1px solid blue;
-    background-color: white;
+    background-color: rgb(241, 241, 255);
     border-radius: 15px;
+    transform: translateY(3px);
+    transition-duration: 0.3s;
 }
 
 #resumeBtn:hover {
-    background-color: rgb(221, 226, 241);
+    background-color: rgb(180, 190, 219);
     transform: translateY(-3px);
-    transition-duration: all 1s;
-    animation: shadow 1s 1;
+    transition-duration: 0.3s;
+    animation: shadow 0.5s 1;
     animation-fill-mode: forwards;
 }
 
@@ -45,6 +128,13 @@ h1 {
 .icon {
     margin-left: 20px;
     font-size: 60px !important;
+    /* transition: all 3s; */
+}
+
+.icon:hover {
+  /* font-size: 75px !important; */
+  color: rgb(16, 5, 163) !important;
+ 
 }
 
 .github {
@@ -53,8 +143,12 @@ h1 {
 
 .card {
     display: inline-block;
-    height: 403.28px;
-    box-shadow: 3px 6px rgba(185, 184, 184, 0.2) !important;
+    height: 430px;
+    box-shadow: 7px 10px 15px #1d1c1c33 !important;
+}
+
+.card:hover {
+    box-shadow: 0 0 25px rgb(20, 20, 20) !important;
 }
 
 .cardMedia {
@@ -67,6 +161,11 @@ h1 {
     font-weight: 500 !important;
 }
 
+.technologies {
+    color: rgb(31, 30, 107);
+    /* font-weight: 500; */
+}
+
 a {
     color: black;
 }
@@ -77,16 +176,47 @@ a:hover {
 }
 
 .myInfo {
-    margin-left: 120px;
+    position: relative;
+    margin: 1rem auto 0;
+    /* top: -100px; */
 }
 
 .profileImg {
-    margin-top: 15px;
-    border-radius: 75px;
+    /* margin-top: 15px; */
+    position: relative;
+    padding: 0;
+    /* border: 20px solid white; */
+    border: 10px solid rgba(255,255,255, 0);
+    box-shadow: 0 5px 20px #95adb9;
+    display: block;
+    margin: 0 auto;
+    /* border-radius: 75px; */
+    border-radius: 50%;
+    object-fit: cover;
 }
 
+.main {
+    position: relative;
+    background-color: lightblue;
+    /* margin-top: 165px; */
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    /* background-image: url('https://images.all-free-download.com/images/graphiclarge/sunlight_burst_blue_vector_background_569858.jpg'); */
+    background-image: url('./background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 15px 15px #95adb9;
+}
+/* 
+.image-container {
+    background: url('https://pe-images.s3.amazonaws.com/type/effects/cc/transparent-background/new-background.jpg');
+    background-size: cover;
+} */
+
 .footer {
-    background-color: rgb(245, 244, 244) !important;
+    background: none !important;
+    /* background-color: rgb(245, 244, 244) !important; */
 }
 
   @media only screen and (max-width: 991px) {
@@ -96,6 +226,16 @@ a:hover {
     .profileImg {
         margin: 15px auto;
     }
+  }
+
+  @media only screen and (max-width: 826px) {
+      .title {
+          float: none;
+          margin: 0 auto;
+      }
+      ul {
+          margin: 0 auto;
+      }
   }
 
   @media only screen and (max-width: 766px) {
@@ -110,10 +250,24 @@ a:hover {
     }
   }
 
+  @media only screen and (max-width: 611px) {
+      .title {
+          width: 100%;
+          text-align: center;
+      }
+      ul {
+          padding: 0;
+      }
+    li {
+        float: none;
+        text-align: center;
+    }
+  }
+
   @keyframes shadow {
-    100% {box-shadow: 0 7px rgb(182, 182, 182);}
+    100% {box-shadow: 0 7px rgb(161, 173, 243, 0.3);}
   }
 
   @keyframes click {
-    100% {box-shadow: 0 3px rgb(182, 182, 182);}
+    100% {box-shadow: 0 3px rgb(161, 173, 243, 0.3);}
   }

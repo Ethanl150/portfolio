@@ -4,7 +4,7 @@ import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 
 function Footer(props) {
     return (
-        <BottomNavigation onChange={props.scrollToTop} showLabels className="footer">
+        <BottomNavigation onClick={props.scrollToTop} showLabels className="footer">
             <BottomNavigationAction label="Back to Top" icon={<ArrowUpwardIcon />} />
         </BottomNavigation>
     )

@@ -18,7 +18,7 @@ function Project(props) {
               <Typography gutterBottom variant="h5" component="h2" className="cardTitle">
                 {props.name}
               </Typography>
-              <Typography variant="body2" color="textSecondary" component="p" style={{ minHeight: "80px" }}>
+              <Typography variant="body2" color="textSecondary" component="p" style={{ minHeight: "100px" }}>
                 {props.description}
                 <br />
                 <span className="technologies">--- Featured Technologies ---</span>

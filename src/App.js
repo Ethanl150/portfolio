@@ -17,11 +17,15 @@ import "./app.css";
 
 const App = () => {
 
-  const scrollToTop = () => {
-    console.log('clicked')
-    // window.scrollTo(0, 0)
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+  const scrollToTop = e => {
+    console.log(e.target.id)
+
+    document.getElementById('top').scrollIntoView({
+      behavior: 'smooth'
+    });
+  
+    // document.body.scrollTop = 0;
+    // document.documentElement.scrollTop = 0;
   }
 
   return (
@@ -29,9 +33,10 @@ const App = () => {
       <Header />
       <Main />
       <Container>
-        <h3 className="my-5 p-5 text-center" id="about-me">I am a full stack web developer with a certificate for completing a 3-month Penn LPS Coding Boot Camp. I am a quick learner and enjoy improving and developing my skills in order to become stronger and more competent. I have experience developing websites alone as well as in teams. My primary technical skills include React, Node, Express, MongoDB, and MySQL.</h3>
-        <h1 className="text-center">Solo projects</h1>
-        <Grid container spacing={5} justify="space-around" className="mt-5" id="projects">
+      <h1 className="text-center mt-5" id="about-me">About Me</h1>
+        <h3 className="my-5 p-5 text-center" id="about-me-text">I am a full stack web developer with a certificate for completing a 3-month Penn LPS Coding Boot Camp. I am a quick learner and enjoy improving and developing my skills in order to become stronger and more competent. I have experience developing websites alone as well as in teams. My primary technical skills include React, Node, Express, MongoDB, and MySQL.</h3>
+        <h1 className="text-center" id="projects">Solo projects</h1>
+        <Grid container spacing={5} justify="space-around" className="mt-5">
           <Project
             appLink="https://ethanl150.github.io/PasswordGenerator/"
             name="Password Generator"
@@ -69,12 +74,12 @@ const App = () => {
             name="Google Books Search"
             image={googleBooksSearch}
             description="An application that allows the user to search for and save books."
-            technologies="Node, Express, React, Mongoose, Bootstrap, Google Books API"
+            technologies="Node, Express, React, Mongoose, Bootstrap, Socket.IO, Google Books API"
             gitHubLink="https://github.com/Ethanl150/googlebookssearch"
           />
         </Grid>
-        <h1 className="text-center mt-5">Group projects</h1>
-        <Grid container spacing={3} justify="space-around" className="mt-5" id="group-projects">
+        <h1 className="text-center mt-5" id="group-projects">Group projects</h1>
+        <Grid container spacing={3} justify="space-around" className="mt-5">
           <Project
             appLink="https://ethanl150.github.io/FoodFinder/"
             name="Food Finder"
